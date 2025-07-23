@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us-Sunset Grill & Café</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf3;
+      color: #333;
+    }
+/* nav bar */
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    
+
+    .nav-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-right a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-right a:hover {
+      background-color: #f96d00;
+      z-index: 1;
+    }
+
+    /* Hero section */
+    .hero {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: black;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Contact Section */
+    .contact-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .contact-info h2,
+    .contact-form h2 {
+      color: #f96d00;
+      margin-bottom: 1rem;
+    }
+
+    .contact-info p {
+      line-height: 1.6;
+      margin: 0.5rem 0;
+    }
+
+    .social-icons {
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      margin-right: 15px;
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: #f96d00;
+    }
+
+    /* Contact Form */
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .submit-btn {
+      background-color: #f96d00;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .submit-btn:hover {
+      background-color: #f96d00;
+    }
+
+    /* Reserve Section */
+    .reserve-section {
+      background-size: cover;
+      background-position: center;
+      color: black;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    .reserve-section::before {
+      /* content: ""; */
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .reserve-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .reserve-btn {
+      background-color: #f96d00;
+      color: white;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .reserve-btn:hover {
+    background-color: #f96d00;
+    }
+
+
+
+  .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .contact-section {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+      }
+
+      .reserve-section h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+   <nav>
+    <!-- restaurant logo -->
+    <div class="logo">
+      <img src="https://static.spotapps.co/website_images/ab_websites/386199_website_v1/logo.png" style="width: 80px; height: 60px;">
+    </div>
+    <!-- nav links -->
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+       <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+ 
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>CONTACT US</h1>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <!-- lft Contact  -->
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <p>We're always happy to hear from you. Reach out with questions, bookings or compliments!</p>
+      <p><strong> Address:</strong> Plot 12 Nile Avenue, Kampala, Uganda</p>
+      <p><strong> Phone:</strong> +256 775 023 419</p>
+      <p><strong> Email:</strong>sunsetgrill&cafe@gmail.com</p>
+      <p><strong> Hours:</strong><br> Mon - Fri: 8am - 10pm<br> Sat - Sun: 9am - 11pm</p>
+
+      <div class="social-icons">
+       
+        <a href="#"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzDWHkQzyBDjxGSkJlajBeiVWT5kEfqSaXzg&s" width="40px" height="40px"></a>
+        <a href="#"><img src="https://img.freepik.com/free-vector/instagram-logo_1199-122.jpg?semt=ais_hybrid&w=740" width="40px" height="40px"></a>
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/930/463/non_2x/tiktok-logo-tikok-icon-transparent-tikok-app-logo-free-png.png" width="40px" height="40px"></a>
+     <a href="#"><img src="https://img.freepik.com/premium-vector/professional-brand-identity-logo-design_659193-41.jpg?semt=ais_hybrid&w=740" width="40px" height="40px"></a>
+      </div>
+    </div>
+
+    <!-- Right Contact Form -->
+    <div class="contact-form">
+      <h2>Your Details</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Comments / Questions:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Contact Us</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Reserve Banner -->
+  <section class="reserve-section">
+    <div class="reserve-content">
+      <h2>Reserve A Table Now</h2>
+      <a href="reservation.html" class="reserve-btn">Make a Reservation</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    &copy; 2025 Sunset Grill & Café. All rights reserved.
+  </footer>
+
+</body>
+</html>

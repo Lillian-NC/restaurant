@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu- Sunset Grill & Café</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #fffaf3;
+      color: #333;
+    }
+
+     /* nav bar */
+      nav {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    
+
+    .nav-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-right a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    header {
+      padding: 1.5rem;
+      text-align: center;
+      color: black;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-style: italic;
+      color: black;
+    }
+
+    .section {
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 3px solid #f96d00;
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      color: #6c1e11;
+    }
+
+    .menu-category {
+      margin-bottom: 3rem;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+      border-bottom: 1px dashed #ccc;
+      background-color: #fff;
+      border-radius: 6px;
+    }
+
+    .menu-item:hover {
+      background-color: #fef1e8;
+      transform: scale(1.01);
+    }
+
+    .menu-item-description {
+      max-width: 75%;
+    }
+
+    .menu-item-description strong {
+      font-size: 1.1rem;
+      color: #222;
+    }
+
+    .menu-item-price {
+      font-weight: bold;
+      white-space: nowrap;
+      color: #f96d00;
+    }
+
+    .menu-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 2rem 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 2rem;
+    }
+/* responsiveness */
+    @media (max-width: 768px) {
+      .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu-item-price {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+   <!-- nav bar -->
+ <nav>
+    <!-- restaurant logo -->
+    <div class="logo">
+      <img src="https://static.spotapps.co/website_images/ab_websites/386199_website_v1/logo.png" style="width: 80px; height: 60px;">
+    </div>
+    <!-- nav links -->
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+       <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header>
+    <h1>Our Menu</h1>
+    <p>Delicious flavors, beautifully served</p>
+  </header>
+
+  <!-- Menu Section -->
+  <div class="section">
+
+    <img src="https://tse3.mm.bing.net/th/id/OIP.amQn-069ILTY9lIhukkvQQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"class="menu-image" />
+
+    <!-- Breakfast -->
+    <div class="menu-category" id="breakfast">
+      <h2>Breakfast</h2>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>English Breakfast</strong><br>
+          Eggs, toast, sausage, and tea
+        </div>
+        <div class="menu-item-price">UGX 18,000</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Chapati & Tea</strong><br>
+          Two soft chapatis served with spiced tea
+        </div>
+        <div class="menu-item-price">UGX 8,000</div>
+      </div>
+    </div>
+
+    <!-- Lunch -->
+    <div class="menu-category" id="lunch">
+      <h2>Lunch</h2>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Beef Stew</strong><br>
+          Served with rice, posho, or chapati
+        </div>
+        <div class="menu-item-price">UGX 20,000</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Vegetable Curry</strong><br>
+          Mixed vegetables in coconut curry sauce
+        </div>
+        <div class="menu-item-price">UGX 15,000</div>
+      </div>
+    </div>
+
+    <!-- Dinner -->
+    <div class="menu-category" id="dinner">
+      <h2>Dinner</h2>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Grilled Chicken</strong><br>
+          Served with fries and salad
+        </div>
+        <div class="menu-item-price">UGX 25,000</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Spaghetti Bolognese</strong><br>
+          Pasta in rich tomato meat sauce
+        </div>
+        <div class="menu-item-price">UGX 22,000</div>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <div class="menu-category" id="desserts">
+      <h2>Desserts</h2>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Chocolate Cake</strong><br>
+          Moist cake with chocolate frosting
+        </div>
+        <div class="menu-item-price">UGX 12,000</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Fruit Salad</strong><br>
+          Seasonal fruits served chilled
+        </div>
+        <div class="menu-item-price">UGX 10,000</div>
+      </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="menu-category" id="drinks">
+      <h2>Drinks</h2>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Passion Juice</strong><br>
+          Freshly squeezed passion fruit juice
+        </div>
+        <div class="menu-item-price">UGX 7,000</div>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-description">
+          <strong>Cappuccino</strong><br>
+          Hot espresso with steamed milk and foam
+        </div>
+        <div class="menu-item-price">UGX 8,000</div>
+      </div>
+    </div>
+
+    <img src="https://img.freepik.com/premium-photo/drinks-table-with-sunset-sky-clouds_931553-24207.jpg" class="menu-image"/>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Sunset Grill & Cafe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

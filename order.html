@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Place Your Order-Sunset Grill & Café</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffaf3;
+    }
+ /* nav bar */
+      nav {
+      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+
+    
+
+    .nav-right {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-right a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    
+    header {
+      color: #f96d00;
+      padding: 1rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .order-form {
+      max-width: 800px;
+      margin: 2rem auto;
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+
+    select,
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .form-row .form-group {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .submit-btn {
+      background-color: #f96d00;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #d95a00;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+/* responsiveness */
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+      }
+
+      .form-row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+   <!-- nav bar -->
+ <nav>
+    <!-- restaurant logo -->
+    <div class="logo">
+      <img src="https://static.spotapps.co/website_images/ab_websites/386199_website_v1/logo.png" style="width: 80px; height: 60px;">
+    </div>
+    <!-- nav links -->
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+       <a href="order.html">Order</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <header>
+    Place Your Order
+  </header>
+
+  <div class="order-form">
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="breakfast">Breakfast:</label>
+          <select id="breakfast" name="breakfast">
+            <option value="">-- Select Breakfast --</option>
+            <option value="pancakes">Pancakes</option>
+            <option value="omelette">Omelette</option>
+            <option value="toast">Toast & Tea</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="bq">Qty</label>
+          <input type="number" name="breakfast_qty" id="bq" min="0" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="lunch">Lunch:</label>
+          <select id="lunch" name="lunch">
+            <option value="">-- Select Lunch --</option>
+            <option value="burger">Grilled Burger</option>
+            <option value="rice">Fried Rice & Chicken</option>
+            <option value="salad">Caesar Salad</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="lq">Qty</label>
+          <input type="number" name="lunch_qty" id="lq" min="0" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="dinner">Dinner:</label>
+          <select id="dinner" name="dinner">
+            <option value="">-- Select Dinner --</option>
+            <option value="steak">Grilled Steak</option>
+            <option value="pasta">Creamy Pasta</option>
+            <option value="soup">Vegetable Soup</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dq">Qty</label>
+          <input type="number" name="dinner_qty" id="dq" min="0" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="dessert">Dessert:</label>
+          <select id="dessert" name="dessert">
+            <option value="">-- Select Dessert --</option>
+            <option value="cake">Chocolate Cake</option>
+            <option value="icecream">Vanilla Ice Cream</option>
+            <option value="fruit">Fruit Salad</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dsq">Qty</label>
+          <input type="number" name="dessert_qty" id="dsq" min="0" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="drinks">Drinks:</label>
+          <select id="drinks" name="drinks">
+            <option value="">-- Select Drink --</option>
+            <option value="juice">Fresh Juice</option>
+            <option value="soda">Soda</option>
+            <option value="coffee">Coffee</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dq2">Qty</label>
+          <input type="number" name="drink_qty" id="dq2" min="0" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Special Requests :</label>
+        <textarea id="notes" name="notes" placeholder="Add any extra info here..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Order</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Sunset Grill & Café. All rights reserved.
+  </footer>
+</body>
+</html>

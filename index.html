@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sunset Grill & Café</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #fffaf3;
+      }
+
+      header {
+        background-color: #f96d00;
+        padding: 1rem;
+        color: white;
+        text-align: center;
+      }
+      /* nav bar */
+      nav {
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+      }
+
+      .nav-right {
+        display: flex;
+        gap: 20px;
+      }
+
+      .nav-right a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      .nav-right a:hover {
+        background-color: #f96d00;
+      }
+      /* hero section */
+      .hero {
+        background-image: url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80");
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+        text-shadow: 2px 2px 4px #000;
+        font-family: "Great Vibes", cursive;
+      }
+
+      /* order button */
+
+      .btn {
+        background-color: #f96d00;
+        color: white;
+        padding: 10px 25px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+      }
+      /* food categories */
+      .section {
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .category-carousel {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .category-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+      }
+
+      .category-item {
+        min-width: 250px;
+        margin: 0 1rem;
+        background-color: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        text-decoration: none;
+        color: #333;
+      }
+
+      .category-item img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .category-item h3 {
+        margin: 0;
+        padding: 1rem;
+        font-size: 1.1rem;
+        background-color: #f96d00;
+        color: white;
+      }
+      /* enable scroll automatically */
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      /* footer */
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+      }
+      /* responsiveness */
+      @media (max-width: 600px) {
+        .hero {
+          font-size: 2rem;
+          height: 500px;
+        }
+
+        .nav-right a {
+          padding: 10px;
+          font-size: 0.9rem;
+        }
+
+        .btn {
+          padding: 8px 16px;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <nav>
+      <!-- restaurant logo -->
+      <div class="logo">
+        <img
+          src="https://static.spotapps.co/website_images/ab_websites/386199_website_v1/logo.png"
+          style="width: 80px; height: 60px"
+        />
+      </div>
+      <!-- nav links -->
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <header class="hero">
+      <div class="hero-content">
+        <div>Welcome to Sunset Grill & Café</div>
+        <a href="order.html" class="btn">Order Now</a>
+      </div>
+    </header>
+
+    <div class="section">
+      <h2>Explore Our Food Categories</h2>
+      <div class="category-carousel">
+        <!-- food categories linked to the menu -->
+        <div class="category-track">
+          <a href="menu.html#breakfast" class="category-item">
+            <img
+              src="https://holwoodfarm.co.uk/files/7615/6672/7112/Cafe-Breakfast-Full.jpg"
+            />
+            <h3>Breakfast</h3>
+          </a>
+          <a href="menu.html#lunch" class="category-item">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.ZsKxUExNUCz0eRZmamHXWgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+            />
+            <h3>Lunch</h3>
+          </a>
+          <a href="menu.html#dinner" class="category-item">
+            <img
+              src="https://tse3.mm.bing.net/th/id/OIP.tBfdpNDNmsbGHNSYMZ7HVQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+            />
+            <h3>Dinner</h3>
+          </a>
+          <a href="menu.html#desserts" class="category-item">
+            <img
+              src="https://th.bing.com/th/id/R.241197f7b652a368817490f73b48634b?rik=6E4fi7bmNyC1Dg&riu=http%3a%2f%2fs3.amazonaws.com%2fgmi-digital-library%2f663ade70-ea7b-433e-896d-fa00042586e4.jpg&ehk=NO5AI0wY1rJAj6CCpO7efCIFk50ftLwe3eBVUVND5yk%3d&risl=&pid=ImgRaw&r=0"
+              alt="Desserts"
+            />
+            <h3>Desserts</h3>
+          </a>
+          <a href="menu.html#drinks" class="category-item">
+            <img
+              src="https://tse4.mm.bing.net/th/id/OIP.WCfih2C2B7WoGfs5xdXMmgHaEr?rs=1&pid=ImgDetMain&o=7&rm=3"
+            />
+            <h3>Drinks</h3>
+          </a>
+
+          <!-- Repeat for smooth scroll -->
+          <a href="menu.html#breakfast" class="category-item">
+            <img
+              src="https://holwoodfarm.co.uk/files/7615/6672/7112/Cafe-Breakfast-Full.jpg"
+            />
+            <h3>Breakfast</h3>
+          </a>
+          <a href="menu.html#lunch" class="category-item">
+            <img
+              src="https://tse1.mm.bing.net/th/id/OIP.ZsKxUExNUCz0eRZmamHXWgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+            />
+            <h3>Lunch</h3>
+            <a href="menu.html#dinner" class="category-item">
+              <img
+                src="https://tse3.mm.bing.net/th/id/OIP.tBfdpNDNmsbGHNSYMZ7HVQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+              />
+              <h3>Dinner</h3>
+            </a>
+            <a href="menu.html#desserts" class="category-item">
+              <img
+                src="https://th.bing.com/th/id/R.241197f7b652a368817490f73b48634b?rik=6E4fi7bmNyC1Dg&riu=http%3a%2f%2fs3.amazonaws.com%2fgmi-digital-library%2f663ade70-ea7b-433e-896d-fa00042586e4.jpg&ehk=NO5AI0wY1rJAj6CCpO7efCIFk50ftLwe3eBVUVND5yk%3d&risl=&pid=ImgRaw&r=0"
+                alt="Desserts"
+              />
+              <h3>Desserts</h3>
+            </a>
+            <a href="menu.html#drinks" class="category-item">
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.WCfih2C2B7WoGfs5xdXMmgHaEr?rs=1&pid=ImgDetMain&o=7&rm=3"
+              />
+              <h3>Drinks</h3>
+            </a>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Sunset Grill & Café. All rights reserved.
+    </footer>
+  </body>
+</html>
